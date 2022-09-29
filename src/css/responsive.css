@@ -1,0 +1,55 @@
+@media(max-width:500px) {
+    .header h1 {
+        font-size: 24px;
+    }
+    .header .intro {
+        font-size: 14px;
+    }
+    main {
+        flex-direction: column;
+    }
+    main aside{
+        order: 0;
+        width: 100%;
+        height: 100%;
+        margin:0;
+        align-items: flex-start;
+        box-shadow: none;
+    }
+    main aside .restaurant {
+        padding: 0;
+        font-size: 10px;
+    }
+    main aside .restaurant span {
+        padding: 5px;
+    }
+    main aside .times {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 0;
+    }
+    main aside .times span {
+        font-size: 22px;
+        padding: 5px;
+    }
+    main aside .times > div {
+        padding: 10px 35px 10px 0px;
+        font-size: 10px;
+        align-items: center;
+    }
+    aside .times >div div p:first-child,
+    aside .restaurant div p:first-child  {
+    font-size: 8px;
+    }
+    .ingredients h2 {
+        font-size: 18px;
+    }
+    .ingredients h3 {
+        font-size: 16px;
+    }
+    .ingredients  .check label {
+        font-size:14px;
+    }
+}

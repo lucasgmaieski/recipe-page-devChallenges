@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 970px;
+    margin: 0 auto;
+    
+}
+a {
+    text-decoration: none;
+}
+.header {
+    padding: 30px 15px 15px 15px;
+}
+.header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+.header .intro {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: flex-start;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    color: #4F4F4F;
+    padding: 12px 0 0 12px;
+    max-width: 615px;
+}
+.header .intro span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    transform: rotate(90deg);
+}
+.photo {
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.ingredients {
+    max-width: 550px;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 215px;
+    height: 370px;
+    min-width: 180px;
+    margin-left: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+aside .restaurant {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 20px 10px 30px;
+}
+aside .restaurant span, 
+aside .restaurant div p:last-child {
+ color: #F2994A;
+}
+aside .restaurant span {
+    padding: 12px;
+}
+aside .times > div{
+   display: flex;
+   padding: 10px 20px;
+   justify-content: flex-start;
+   font-size: 14px;
+   font-weight: 500;
+}
+aside .times >div div {
+    padding: 10px 0px;
+}
+aside .times >div div p:first-child,
+ aside .restaurant div p:first-child {
+    font-size: 10px;
+    font-weight: 700;
+    color: #BDBDBD;
+}
+
+aside .times >div span {
+    padding: 12px;
+}
+.ingredients {
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+}
+.ingredients h2, .ingredients h3, .instructions h2 {
+    font-family: 'Playfair Display', serif;
+}
+.ingredients h2 {
+    font-size:24px;
+    font-weight: 700;
+}
+.ingredients h3{
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    padding: 20px 0px;
+}
+.ingredients .check{
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 4px 0px;
+}
+.ingredients  .check label {
+    font-size: 16px;
+}
+
+
+.instructions {
+    max-width: 550px;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.instructions h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+.instructions ol {
+    counter-reset: item; /*Remove default style*/
+    list-style-type: none;
+  }
+
+ .instructions ol li {
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 0px;
+  }
+
+  .instructions ol li:before {
+    background-color:orange; /*Background*/
+    border-radius: 5px; /*make rounded*/
+    width: 10px;
+    height: 12px;
+    content: counter(item) "  "; /*Count the lines*/
+    counter-increment: item ;/*apply the counter*/
+    display: inline-block;
+    padding: 5px 10px 15px 10px;
+    margin-right: 5px;
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+  }
+
+  
+  footer {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0 10px 0;
+
+  }
